@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Match the Manufacturer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="site-name">Classic Console Quizzes</h1>
+  </header>
+
+  <main class="quiz-layout">
+    <h2>Match the Manufacturer</h2>
+    <p>Drag the manufacturer’s name to the correct console image!</p>
+
+    <div class="match-grid">
+      <!-- Left side: console images -->
+      <div class="match-column" id="consoles">
+        <div class="match-item" data-match="Nintendo">
+          <p>[Nintendo Console Img]</p>
+        </div>
+        <div class="match-item" data-match="Sony">
+          <p>[Sony Console Img]</p>
+        </div>
+        <div class="match-item" data-match="Microsoft">
+          <p>[Microsoft Console Img]</p>
+        </div>
+        <div class="match-item" data-match="Sega">
+          <p>[Sega Console Img]</p>
+        </div>
+      </div>
+
+      <!-- Right side: manufacturer names -->
+      <div class="match-column" id="manufacturers">
+        <div class="drag-item" draggable="true" data-name="Nintendo">
+          Nintendo
+        </div>
+        <div class="drag-item" draggable="true" data-name="Sony">
+          Sony
+        </div>
+        <div class="drag-item" draggable="true" data-name="Microsoft">
+          Microsoft
+        </div>
+        <div class="drag-item" draggable="true" data-name="Sega">
+          Sega
+        </div>
+      </div>
+    </div>
+
+    <button onclick="checkManufacturerMatch()">Check Matches</button>
+    <div id="matchFeedback"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 Quiz Site. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
